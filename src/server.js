@@ -12,7 +12,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-mongoose.connect("mongodb+srv://sarveshkamtekar:sarveshk13@cluster0.htu0s.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(function(){
+mongoose.connect("mongodb+srv://sarvkamt:sarveshk13@cluster0.x9kke.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(function(){
     // home route (/)
     app.get("/", function(req, res){
         const response = {message: "API Works!"};
